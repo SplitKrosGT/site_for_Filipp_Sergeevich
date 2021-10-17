@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: grid; 
+    grid-auto-flow: row dense; 
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: ". .";
+}
+
+header .logo {
+    align-self: center;
+    padding-left: 23vw;
+}
+
+header .logo h1 {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header .menu {
+    padding-right: 23vw;
+    text-align: right;
+    align-self: center
+}
+header .menu a {
+    color: rgb(44, 44, 44);
+    font-size: 12px;
+    font-weight: lighter;
+    padding-right: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+header .menu a:hover {
+    color: rgb(255, 115, 0);
+    text-decoration-line: underline;
+    font-size: 12px;
+    font-weight: lighter;
+    padding-right: 15px;
+}
+main {
+    text-align: center;
+    height: 90vh;
+    background: rgba(0,0,0,0.65) url(../img/hero.jpg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main .logo h2{
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 40vh;
+    color: rgb(255, 255, 255)
+}
+
+main .text {
+    font-size: 18px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+main a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+main a:hover {
+    background-color: rgb(255, 115, 0);
+    border-radius: 10px;
+}
+
+.description {
+    padding-top: 50px;
+    padding-left: 23vw;
+}
+
+.description h2 {
+    font-weight: lighter;
+    font-size: 32px;
+    color: rgb(44, 44, 44);
+    padding-bottom: 20px;
+}
+
+.description a {
+    color: rgb(44, 44, 44);
+    font-size: 14px;
+}
+
+.catalog {
+    padding-top: 50px;
+    width: 100vw;
+    height: 50px;
+    display: grid; 
+    grid-auto-flow: row dense; 
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: ". .";
+}
+
+.catalog .title {
+    align-self: center;
+    padding-left: 23vw;
+}
+
+.catalog .title h2{
+    font-weight: lighter;
+    font-size: 32px;
+    color: rgb(44, 44, 44);
+}
+
+.catalog .menu {
+    align-self: center;
+    padding-right: 23vw;
+    text-align: right;
+}
+
+.catalog .menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(44, 44, 44);
+    font-weight: lighter;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.catalog .menu a:focus {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 115, 0);
+    background-size: 2px 6px;
+    border-radius: 25px;
+}
+
+.sale {
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 23vw;
+    padding-right: 23vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex: 1 auto;
+}
+
+.sale .product1 {
+    width: 150px;
+    height: 160px;
+    background: url(../img/product1.jpg);
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-flow: dense row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    box-shadow: 0 0 20px rgba(0,0,0,0.65);
+}
+.sale .product2 {
+    width: 150px;
+    height: 160px;
+    background: url(../img/product2.jpg);
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-flow: dense row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    box-shadow: 0 0 20px rgba(0,0,0,0.65);
+}
+.sale .product3 {
+    width: 150px;
+    height: 160px;
+    background: url(../img/product3.jpg);
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-flow: dense row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    box-shadow: 0 0 20px rgba(0,0,0,0.65);
+}
+.sale .product4 {
+    width: 150px;
+    height: 160px;
+    background: url(../img/product4.jpg);
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-flow: dense row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    box-shadow: 0 0 20px rgba(0,0,0,0.65);
+}
+
+.sale h3 {
+    width: min-content;
+    font-size: 12px;
+    font-weight: lighter;
+    color:rgb(255, 255, 255);
+    background: rgb(255, 115, 0);
+    padding-right: 6px;
+    border-radius: 0 15px 15px 0;
+    text-align: start;
+}
+
+.sale .info {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    display: block;
+    margin-top: 109px;
+    text-align: left;
+}
+
+.sale .btn {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    display: block;
+    margin-top: 126px;
+    width: min-content;
+    text-align: right;
+    padding: 5px;
+    transition: all 0,6s;
+}
+.sale .btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 115, 0);
+    width: min-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+

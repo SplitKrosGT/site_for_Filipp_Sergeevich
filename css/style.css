@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 header {
     position: fixed;
-    width: 100vw;
+    width: 1000px;
     height: 50px;
     align-self: center;
     background-color: rgb(255, 255, 255);
@@ -20,7 +26,6 @@ header {
 
 header .logo {
     align-self: center;
-    padding-left: 23vw;
 }
 
 header .logo h1 {
@@ -30,7 +35,6 @@ header .logo h1 {
 }
 
 header .menu {
-    padding-right: 23vw;
     text-align: right;
     align-self: center
 }
@@ -90,14 +94,12 @@ main a:hover {
 
 .description {
     padding-top: 50px;
-    padding-left: 23vw;
 }
 
 .description h2 {
     font-weight: lighter;
     font-size: 32px;
     color: rgb(44, 44, 44);
-    padding-bottom: 20px;
 }
 
 .description a {
@@ -107,7 +109,7 @@ main a:hover {
 
 .catalog {
     padding-top: 50px;
-    width: 100vw;
+    width: cover;
     height: 50px;
     display: grid; 
     grid-auto-flow: row dense; 
@@ -119,7 +121,6 @@ main a:hover {
 
 .catalog .title {
     align-self: center;
-    padding-left: 23vw;
 }
 
 .catalog .title h2{
@@ -130,7 +131,6 @@ main a:hover {
 
 .catalog .menu {
     align-self: center;
-    padding-right: 23vw;
     text-align: right;
 }
 
@@ -153,12 +153,11 @@ main a:hover {
 .sale {
     text-align: center;
     padding-top: 80px;
-    padding-left: 23vw;
-    padding-right: 23vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     flex: 1 auto;
+    padding-bottom: 80px;
 }
 
 .sale .product1 {
@@ -251,3 +250,135 @@ main a:hover {
     border-radius: 10px;
 }
 
+
+
+.inform {
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex: 1 auto;
+    padding-bottom: 80px;
+}
+
+.inform .btn1 {
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.65) url(../img/1.jpg);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.692);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    transition: all 0.5s;
+}
+
+.inform .btn1:hover {
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.inform .btn2 {
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.65) url(../img/2.jpg);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.692);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    transition: all 0.5s;
+}
+
+.inform .btn2:hover {
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.inform .btn3 {
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.65) url(../img/3.jpg);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.692);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    transition: all 0.5s;
+}
+
+.inform .btn3:hover {
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.inform .btn4 {
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.65) url(../img/4.jpg);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.692);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    transition: all 0.5s;
+}
+
+.inform .btn4:hover {
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.inform .text {
+    text-align: center;
+    font-size: 14px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    align-self: center;
+    padding-top: 75px;
+}
+
+.footer {
+    align-self: center;
+    display: grid; 
+    grid-auto-flow: row dense; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: ". .";
+}
+
+.footer .text {
+    color: rgb(59, 59, 59);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.footer .menu {
+    text-align: left;
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . .";
+}
+
+.footer .menu a {
+    color: rgb(44, 44, 44);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer .menu p {
+
+    color: rgb(59, 59, 59);
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer .menu p:hover {
+    color: rgb(255, 115, 0);
+    text-decoration: underline;
+}
